@@ -1,0 +1,16 @@
+[project]
+name = "hermes-chatgpt-hub"
+version = "0.1.0"
+description = "Shared knowledge hub between Hermes Agent and ChatGPT"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=2.0",
+    "ijson>=3.2",
+]
+
+[project.scripts]
+hermes-hub = "hermes_hub.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
